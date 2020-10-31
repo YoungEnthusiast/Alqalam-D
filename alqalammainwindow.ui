@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1106</width>
+    <height>1199</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Students' Record Manager and Reports Generator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>alqalam_logo.jpg</normaloff>alqalam_logo.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::GroupedDragging</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="welcome_label">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(89, 0, 134);
+font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="welcome_label2">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(169, 0, 253);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>alqalam_logo.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1106</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="menuStudents">
+     <property name="title">
+      <string>Registration</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionNew"/>
+     <addaction name="separator"/>
+     <addaction name="actionView_Students"/>
+    </widget>
+    <widget class="QMenu" name="menuExams">
+     <property name="title">
+      <string>Result</string>
+     </property>
+     <widget class="QMenu" name="menuFirst_Term">
+      <property name="title">
+       <string>First Term</string>
+      </property>
+      <widget class="QMenu" name="menuRecord2">
+       <property name="title">
+        <string>Nursery Subjects</string>
+       </property>
+       <addaction name="separator"/>
+       <addaction name="separator"/>
+       <addaction name="menuRecord"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores"/>
+       <addaction name="separator"/>
+      </widget>
+      <widget class="QMenu" name="menuPrimary_Classes">
+       <property name="title">
+        <string>Primary Subjects</string>
+       </property>
+       <addaction name="actionRecord_New"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores_5"/>
+      </widget>
+      <widget class="QMenu" name="menuSecondary_Classes">
+       <property name="title">
+        <string>Secondary Subjects</string>
+       </property>
+       <addaction name="actionRecord_New_6"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores_8"/>
+      </widget>
+      <addaction name="menuRecord2"/>
+      <addaction name="separator"/>
+      <addaction name="menuPrimary_Classes"/>
+      <addaction name="separator"/>
+      <addaction name="menuSecondary_Classes"/>
+     </widget>
+     <widget class="QMenu" name="menuSecond_Term">
+      <property name="title">
+       <string>Second Term</string>
+      </property>
+      <widget class="QMenu" name="menuNursery_Classes">
+       <property name="title">
+        <string>Nursery Subjects</string>
+       </property>
+       <addaction name="actionRecord_New_2"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores_3"/>
+      </widget>
+      <widget class="QMenu" name="menuPrimary_Classes_2">
+       <property name="title">
+        <string>Primary Subjects</string>
+       </property>
+       <addaction name="actionRecord_New_4"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores_6"/>
+      </widget>
+      <widget class="QMenu" name="menuSecondary_Classes_2">
+       <property name="title">
+        <string>Secondary Subjects</string>
+       </property>
+       <addaction name="actionRecord_New_7"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores_9"/>
+      </widget>
+      <addaction name="menuNursery_Classes"/>
+      <addaction name="separator"/>
+      <addaction name="menuPrimary_Classes_2"/>
+      <addaction name="separator"/>
+      <addaction name="menuSecondary_Classes_2"/>
+     </widget>
+     <widget class="QMenu" name="menuThird_Term">
+      <property name="title">
+       <string>Third Term</string>
+      </property>
+      <widget class="QMenu" name="menuRecord3">
+       <property name="title">
+        <string>Nursery Subjects</string>
+       </property>
+       <addaction name="actionRecord_New_3"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores_4"/>
+       <addaction name="separator"/>
+      </widget>
+      <widget class="QMenu" name="menuPrimary_Classes_3">
+       <property name="title">
+        <string>Primary Subjects</string>
+       </property>
+       <addaction name="actionRecord_New_5"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores_7"/>
+      </widget>
+      <widget class="QMenu" name="menuSecondary_Subjects">
+       <property name="title">
+        <string>Secondary Subjects</string>
+       </property>
+       <addaction name="actionRecord_New_8"/>
+       <addaction name="separator"/>
+       <addaction name="actionView_Scores_10"/>
+      </widget>
+      <addaction name="menuRecord3"/>
+      <addaction name="separator"/>
+      <addaction name="menuPrimary_Classes_3"/>
+      <addaction name="separator"/>
+      <addaction name="menuSecondary_Subjects"/>
+     </widget>
+     <addaction name="separator"/>
+     <addaction name="menuFirst_Term"/>
+     <addaction name="separator"/>
+     <addaction name="menuSecond_Term"/>
+     <addaction name="separator"/>
+     <addaction name="menuThird_Term"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuStudents"/>
+    <addaction name="separator"/>
+    <addaction name="menuExams"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>Admin</string>
+    </property>
+    <addaction name="actionLogin"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuAdmin"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="statusTip">
+    <string>Click to exit application</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>Register New</string>
+   </property>
+  </action>
+  <action name="actionStudView">
+   <property name="text">
+    <string>All Students</string>
+   </property>
+  </action>
+  <action name="actionNursery_2">
+   <property name="text">
+    <string>Nursery 2</string>
+   </property>
+  </action>
+  <action name="actionNursery_4">
+   <property name="text">
+    <string>Nursery 2</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="menuRecord">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+  <action name="actionSecondary_Classes">
+   <property name="text">
+    <string>Secondary Classes</string>
+   </property>
+  </action>
+  <action name="actionView_Students">
+   <property name="text">
+    <string>View Students</string>
+   </property>
+  </action>
+  <action name="actionRecord_New_2">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores_3">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+  <action name="actionRecord_New_3">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores_4">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+  <action name="actionRecord_New">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores_5">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+  <action name="actionRecord_New_4">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores_6">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+  <action name="actionRecord_New_5">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores_7">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+  <action name="actionRecord_New_6">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores_8">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+  <action name="actionRecord_New_7">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores_9">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+  <action name="actionRecord_New_8">
+   <property name="text">
+    <string>Record New</string>
+   </property>
+  </action>
+  <action name="actionView_Scores_10">
+   <property name="text">
+    <string>View Scores</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
